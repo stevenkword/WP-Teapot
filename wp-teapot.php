@@ -42,7 +42,7 @@ class WP_Teapot {
 	const TEXT_DOMAIN    = 'wp-teapot';
 
 
-	public static $is_active = false;
+	private static $is_active = false;
 
 	/* Define and register singleton */
 	private static $instance = false;
