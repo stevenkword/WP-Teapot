@@ -55,15 +55,15 @@ class WP_Teapot {
 
 	/**
 	 * Clone
-     *
-	 * @since 2.0.0
+	 *
+	 * @since 1.0.0
 	 */
 	private function __clone() { }
 
 	/**
 	 * Constructor
-     *
-	 * @since 2.0.0
+	 *
+	 * @since 1.0.0
 	 */
 	private function __construct() {
 		$plugin_dir = basename( dirname( __FILE__ ) );
@@ -71,6 +71,11 @@ class WP_Teapot {
 		self::init();
 	}
 
+	/**
+	 * WP Init
+	 *
+	 * @return [type] [description]
+	 */
 	public function init() {
 		// Actions
 		add_action( 'send_headers', array( $this, 'action_send_headers' ) );
