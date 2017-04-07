@@ -33,14 +33,12 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  * WP Teapot
  */
 class WP_Teapot {
-
 	const VERSION        = '1.0.0';
 	const REVISION       = '20140725';
 	const METAKEY        = 'wp_teapot';
 	const NONCE          = 'wp_teapot_nonce';
 	const NONCE_FAIL_MSG = 'Cheatin&#8217; huh?';
 	const TEXT_DOMAIN    = 'wp-teapot';
-
 
 	private static $is_active = false;
 
