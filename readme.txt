@@ -1,6 +1,6 @@
 === WP Teapot ===
 Contributors: stevenkword
-Tags: http, status code
+Tags: http, status code, rfc, teapot
 Requires at least: 3.0
 Tested up to: 4.7
 Stable tag: 1.0.0
