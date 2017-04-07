@@ -40,8 +40,6 @@ class WP_Teapot {
 	const NONCE_FAIL_MSG = 'Cheatin&#8217; huh?';
 	const TEXT_DOMAIN    = 'wp-teapot';
 
-	private static $is_active = false;
-
 	/* Define and register singleton */
 	private static $instance = false;
 	public static function instance() {
