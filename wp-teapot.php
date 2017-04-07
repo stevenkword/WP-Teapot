@@ -72,36 +72,19 @@ class WP_Teapot {
 	/**
 	 * WP Init
 	 *
-	 * @return [type] [description]
+	 * @since 1.0.0
 	 */
 	public function init() {
 		// Actions
 		add_action( 'send_headers', array( $this, 'action_send_headers' ) );
-		add_action( 'parse_request', array( $this, 'action_parse_request' ) );
-	}
-
-	/**
-	 * Check to see is we are looking at the web root and if so, note it for later
-	 *
-	 * @return null
-	 */
-	public function action_parse_request( $request ) {
-
-		if( isset( $request->request ) && '' == $request->request ) {
-			$this->is_active = true;
-		}
-
 	}
 
 	/**
 	 * Send em' headers, like they've never been sent before!
-	 * @return null
+	 *
+	 * @since 1.0.0
 	 */
 	public function action_send_headers() {
-
-		if( ! $this->is_active )
-			return;
-
 		$code = 418; // Short and stout
 		status_header( $code ); // Here is my handle
 		$code_desc = get_status_header_desc( $code ); // Here is my spout
